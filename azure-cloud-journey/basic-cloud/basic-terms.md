@@ -130,3 +130,125 @@ Ability to restore services after a catastrophic event.
 
 > 🧠 Next up: Learn about **Azure Virtual Machines (VMs)** and deploy your first VM with CLI and Portal!
 
+# Today's Azure Concepts
+
+## Infrastructure as a Service (IaaS)
+
+Raw compute, storage, and networking resources you manage at the OS level.
+
+* **You manage:** OS, middleware, runtime, applications, data, security.
+* **Azure manages:** Physical hosts, hypervisor, network fabric.
+* **Examples:** Azure Virtual Machines, Azure Disks, Azure Virtual Network.
+
+## Platform as a Service (PaaS)
+
+Managed platform for building, deploying, and scaling apps.
+
+* **You manage:** Application code, configuration, data.
+* **Azure manages:** OS, runtime, middleware, scaling, high availability.
+* **Examples:** Azure App Service, Azure Functions, Azure SQL Database, Azure Kubernetes Service (AKS).
+
+## Software as a Service (SaaS)
+
+Fully managed applications delivered over the Internet.
+
+* **You manage:** User settings, data inside the app.
+* **Azure/Microsoft manages:** Application code, runtime, infrastructure.
+* **Examples:** Microsoft 365, Dynamics 365, Power BI, Azure DevOps Services, GitHub.
+
+## Azure Resource
+
+An individual service instance in Azure.
+
+* Each resource has its own configuration, billing meter, and lifecycle.
+* **Examples:** Virtual Machine, Storage Account, App Service, SQL Database.
+
+## Azure Resource Group
+
+A logical container for grouping related resources.
+
+* Resources in a group share lifecycle operations (deploy, update, delete).
+* Enables unified management, RBAC, tagging, and policy enforcement.
+* **Example:** Resource group `rg-webapp-prod` containing a VM, Storage Account, App Service, and SQL Database.
+
+## Azure Resource Manager (ARM)
+
+The deployment and management control plane for Azure.
+
+* All resource operations (create/update/delete) go through ARM APIs.
+* Supports declarative templates (ARM templates/Bicep).
+* Provides role-based access control (RBAC), tagging, policy enforcement, and dependency resolution.
+* **Usage:** Azure Portal, Azure CLI/PowerShell, ARM templates.
+
+### Quick Reference
+
+| Model/Concept              | You Manage                        | Azure Manages                            | Examples                                 |
+| -------------------------- | --------------------------------- | ---------------------------------------- | ---------------------------------------- |
+| **IaaS**                   | OS, runtime, apps, data, security | Physical infrastructure & virtualization | Virtual Machines, Disks, Virtual Network |
+| **PaaS**                   | App code, configuration, data     | OS, runtime, middleware, scaling, HA     | App Service, Functions, SQL DB, AKS      |
+| **SaaS**                   | User settings & data              | Entire application stack                 | Microsoft 365, Dynamics 365, Power BI    |
+| **Azure Resource**         | Service configuration & data      | Underlying infrastructure via ARM        | VM, Storage Account, SQL Database        |
+| **Resource Group**         | Organization, RBAC, tags          | None (logical container)                 | `rg-<app>-<env>`                         |
+| **Azure Resource Manager** | Deployment templates & RBAC       | ARM service control plane                | ARM Templates, CLI/PowerShell commands   |
+
+## Azure Resources Overview
+
+Below is a categorized list of core Azure resources:
+
+### Compute
+
+* Virtual Machines
+* App Services (Web Apps)
+* Azure Functions
+* Azure Kubernetes Service (AKS)
+
+### Storage
+
+* Azure Blob Storage
+* Azure File Storage
+* Azure Disks
+* Azure Data Lake Storage
+
+### Networking
+
+* Virtual Network (VNet)
+* Load Balancer
+* Application Gateway
+* Azure DNS
+* VPN Gateway
+* ExpressRoute
+
+### Databases
+
+* Azure SQL Database
+* Azure Cosmos DB
+* Azure Database for MySQL/PostgreSQL
+* Azure Table Storage
+
+### Identity & Access
+
+* Azure Active Directory (AAD)
+* Role-Based Access Control (RBAC)
+* Managed Identities
+
+### Monitoring & Management
+
+* Azure Monitor
+* Azure Log Analytics
+* Azure Application Insights
+* Azure Policy
+
+### Developer & Integration Tools
+
+* Azure DevOps
+* Azure Repos
+* Azure Pipelines
+* GitHub (Microsoft owned)
+
+### AI & Machine Learning
+
+* Azure Machine Learning
+* Cognitive Services
+* Azure Bot Services
+
+These resources are accessible via Azure Portal, CLI, SDKs, and ARM/Bicep templates.
