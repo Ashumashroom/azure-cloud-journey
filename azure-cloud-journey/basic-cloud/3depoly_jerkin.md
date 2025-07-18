@@ -92,21 +92,5 @@ yaml
 Copy
 Edit
 
----
-
-Let me know if you want a `bash` script version of this too!
-
-
-
-
-
-
-
-
-Ask ChatGPT
-
-
-
-Tools
 
 
